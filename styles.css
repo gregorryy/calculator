@@ -1,0 +1,73 @@
+/*
+Rouge brique : #B22222
+Vert olive  : #8d8b55
+Bleu nuit : #191970
+Gris acier : #808080
+*/
+
+@font-face {
+  font-family: "Nunito";
+  src: url("Nunito-VariableFont_wght.ttf") format("truetype");
+}
+
+body {
+  background-color: #8d8b55;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0px;
+  font-family: "Nunito";
+  text-align: right;
+}
+
+.container {
+  background: #b22222;
+  padding: 23px;
+  border-radius: 17px;
+  box-shadow: 0 0 10px rgba(10, 0, 0, 1);
+  color: white;
+}
+
+.number {
+  background-color: #808080;
+  color: white;
+  border: 1px solid #808080;
+  border-radius: 20%;
+}
+
+.NN {
+  background-color: #191970;
+  color: white;
+  border: 1px solid #191970;
+  border-radius: 20%;
+}
+
+.buttons {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(4, 1fr);
+  padding-top: 10px;
+}
+
+.screen {
+  background-color: #8d8b55;
+  padding-top: 10px;
+  border-radius: 5px;
+  padding-right: 10px;
+}
+
+#CE {
+  grid-column: span 3;
+  border-radius: 5px;
+}
+
+.NN:active {
+  background-color: #8d8b55;
+  border: #8d8b55;
+}
+
+.number:active {
+  background-color: #8d8b55;
+  border: #8d8b55;
+}
