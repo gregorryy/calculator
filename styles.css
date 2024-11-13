@@ -1,9 +1,9 @@
 /*
-Rouge brique : #B22222
-Vert olive  : #8d8b55
-Bleu nuit : #191970
-Gris acier : #808080
-*/
+      Bleu marine : #000080
+      Beige: #F5F5DC
+      Blanc cassé: #FFFAFA
+      Jaune moutarde: #E1AD01
+      */
 
 @font-face {
   font-family: "Nunito";
@@ -11,7 +11,7 @@ Gris acier : #808080
 }
 
 body {
-  background-color: #8d8b55;
+  background-color: #000080;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,62 +22,97 @@ body {
 }
 
 .container {
-  background: #b22222;
-  padding: 23px;
-  border-radius: 17px;
-  box-shadow: 0 0 10px rgba(10, 0, 0, 1);
+  border-radius: 3px;
+  box-shadow: 0 0 100px #f5f5dc;
   color: white;
-  height: calc(100vh - 200px);
-  width: calc(100vh - 200px);
+  height: calc(100vh - 195px);
+  width: calc(100vh - 400px);
+  border: 5px solid white;
 }
 
 .number {
-  background-color: #808080;
-  color: white;
-  border: 1px solid #808080;
-  border-radius: 20%;
+  background-color: #f5f5dc;
+  border: 1px solid #f5f5dc;
+  border-radius: 3px;
+  border: 1px black solid;
+  cursor: pointer;
+  font-size: 2em;
 }
 
 .NN {
-  background-color: #191970;
+  background-color: #e1ad01;
   color: white;
-  border: 1px solid #191970;
-  border-radius: 20%;
+  border: 1px solid #e1ad01;
+  border-radius: 3px;
+  border: 1px black solid;
+  cursor: pointer;
+  font-size: 2em;
 }
 
 .buttons {
   display: grid;
-  grid-gap: 5px;
+  grid-gap: 2px;
   grid-template-columns: repeat(4, 1fr);
-  padding-top: 10px;
+  height: calc(100vh - 306px);
 }
 
-.screen {
-  background-color: #8d8b55;
-  padding-top: 10px;
-  border-radius: 5px;
-  padding-right: 10px;
-  color: white;
+.screenDiv {
+  background-color: #f5f5dc;
+  color: black;
+  display: flex;
+  justify-content: center;
   text-align: right;
+  font-size: 2em;
+  height: calc(100vh - 802px);
+  padding-bottom: 2px;
 }
 
 #CE {
   grid-column: span 3;
-  border-radius: 5px;
+  border-radius: 1px;
+  cursor: pointer;
 }
 
 .NN:active {
-  background-color: #8d8b55;
-  border: #8d8b55;
+  background-color: #f5f5dc;
+  border: #f5f5dc;
+  color: black;
 }
 
 .number:active {
-  background-color: #8d8b55;
-  border: #8d8b55;
+  background-color: #e1ad01;
+  border: #e1ad01;
+  color: white;
 }
 
 .screenDiv {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.screen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  height: 100px;
+  font-size: 2em;
+  text-align: right;
+}
+
+.number:disabled {
+  background-color: #ababab;
+}
+
+.NN:disabled {
+  background-color: #7e6100;
+}
+
+.number:active:disabled {
+  color: black;
+}
+
+.NN:disabled:active {
+  color: white;
 }
